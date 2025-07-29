@@ -1,0 +1,13 @@
+a, b, c, d = [int(i) for i in input().split()]
+while a <= c:
+    if c > (a+b):
+        a += b
+    else:
+        a = c
+        break
+    if a < (c-d):
+        c -= d
+    else:
+        c = a
+        break
+print(a)
