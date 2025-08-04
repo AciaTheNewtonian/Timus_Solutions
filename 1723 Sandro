@@ -1,0 +1,11 @@
+spell = input()
+let = {i for i in spell}
+m = 0
+charm = spell[0:1]
+for i in let:
+    for x in let:
+        s = spell.count("{}{}".format(i, x))
+        if s > m:
+            charm = "{}{}".format(i, x)
+    m = s
+print(charm)
